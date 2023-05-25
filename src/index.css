@@ -1,0 +1,115 @@
+:root{
+    --green-light-color: #56cf34; 
+    --green-dark-color: #7cba6b; 
+    --marroon-light-color: #94784e; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: rgb(238, 236, 236);
+    color: rgb(99, 98, 98);
+    font-family: 'Amaranth', sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+
+header , article p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin: 20px;
+}
+
+figcaption {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+
+.spinner img {
+    position: absolute;
+    top: calc(400px + 20%);
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.linkDetail, .addToCart {
+    background-color: var(--marroon-light-color);
+    text-transform: uppercase;
+    padding: 15px;
+    width: fit-content;
+    margin: 20px auto;
+}
+
+.addToCart {
+    border: 0;
+    color: #fff;
+    display: block;
+    margin: auto;
+}
+
+.active, header nav a:hover, nav button {
+    background-color: rgba(255, 255, 255, 0.233);
+}
+
+h2 {
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    color: var(--green-dark-color);
+}
+
+h2::before, h2::after{
+    display: inline-block;
+    position: relative;
+    content: "";
+    background-color: rgb(218, 218, 218);
+    height: 1px;
+    width: 50%;
+    vertical-align: middle;
+}
+
+h2::before {
+    right: 10px;
+    margin-left: -50%;
+}
+h2::after {
+    left: 10px;
+    margin-right: -50%;
+}
+
+.ctn {
+    background-color: #ffffff;
+    margin: 25px 0;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
